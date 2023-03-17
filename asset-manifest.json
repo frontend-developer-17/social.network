@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/social.network/static/css/main.5b524732.css",
+    "main.js": "/social.network/static/js/main.04a8341e.js",
+    "static/css/960.64c49151.chunk.css": "/social.network/static/css/960.64c49151.chunk.css",
+    "static/js/960.07fe2ddf.chunk.js": "/social.network/static/js/960.07fe2ddf.chunk.js",
+    "static/css/884.2945a641.chunk.css": "/social.network/static/css/884.2945a641.chunk.css",
+    "static/js/884.69f0bb12.chunk.js": "/social.network/static/js/884.69f0bb12.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/social.network/static/js/787.28cb0dcd.chunk.js",
+    "static/media/loader.png": "/social.network/static/media/loader.e117460d7187ddaa81e6.png",
+    "static/media/image.png": "/social.network/static/media/image.3b9476c9990265852401.png",
+    "static/media/IconPeremot.png": "/social.network/static/media/IconPeremot.2d14ddd60775c648abd5.png",
+    "index.html": "/social.network/index.html",
+    "main.5b524732.css.map": "/social.network/static/css/main.5b524732.css.map",
+    "main.04a8341e.js.map": "/social.network/static/js/main.04a8341e.js.map",
+    "960.64c49151.chunk.css.map": "/social.network/static/css/960.64c49151.chunk.css.map",
+    "960.07fe2ddf.chunk.js.map": "/social.network/static/js/960.07fe2ddf.chunk.js.map",
+    "884.2945a641.chunk.css.map": "/social.network/static/css/884.2945a641.chunk.css.map",
+    "884.69f0bb12.chunk.js.map": "/social.network/static/js/884.69f0bb12.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/social.network/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b524732.css",
+    "static/js/main.04a8341e.js"
+  ]
+}
