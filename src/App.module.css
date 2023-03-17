@@ -1,0 +1,18 @@
+.wrapper_content{
+    display: grid;
+    grid-template-areas: 
+    'h h'
+    'n c';
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 80px 1fr;
+    gap: 5px;
+}
+
+.content{
+    grid-area: c;
+}
+
+
+
+
+

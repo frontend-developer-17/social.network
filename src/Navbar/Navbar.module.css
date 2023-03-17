@@ -1,0 +1,71 @@
+.navbar{
+    background-color: green;
+    grid-area: n;
+    height: 100%;
+    
+    
+   
+}
+.link{
+   
+    padding: 3px 5px 0 10px;
+    list-style-type: none;
+   
+    color: rgb(92, 33, 119);    
+}
+
+a {
+    text-decoration: none;
+    
+   
+}
+.active {
+    color: gold;
+}
+.infoBlock{
+    margin: 10px 0 0 10px;
+}
+.familiBlok{
+    display: flex;
+    margin: 5px;
+    border-radius: 5px;
+}
+.famili{
+   margin: 18px 0 0 8px;
+   height: 20px;
+   border-radius: 5px;
+   border: 1.8px solid rgb(112, 98, 98); 
+}
+.select{
+    margin: 13px;
+}
+.errorsSelect{
+    margin: 13px;
+    border: 1.8px solid red; 
+    border-radius: 5px;
+}
+.selectBlok{
+    display: flex;
+   
+}
+.bodyBlok{
+    display: flex;
+}
+
+.footerBlok{
+display: flex;
+
+}
+.submit{
+    margin-left: 5px;
+}
+.errorsInput{
+    border: 1.8px solid red; 
+    margin: 20px 0 0 8px;
+    height: 20px;
+    border-radius: 5px;
+}
+.fileImg{
+    height: 150px;
+    width:  250px;
+}

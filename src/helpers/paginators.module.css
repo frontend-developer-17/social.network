@@ -1,0 +1,40 @@
+.activeNumber{
+    font-weight: bold;
+    color: rgba(170, 120, 58, 0.801);
+  padding: 5px  ;
+    cursor: pointer;
+}
+.activeNumber:hover{
+  transition: 1s;
+  background-color: bisque;
+  cursor: pointer;
+}
+.iconBlok{
+  display: flex;
+}
+.leftBlok{
+  background-color: rgb(209, 218, 205);
+ margin-right: 5px;
+ padding: 5px;
+ border-radius: 20px;
+}
+.rightBlok{
+  background-color: rgb(209, 218, 205);
+ margin-left: 5px;
+ padding: 5px;
+ border-radius: 20px;
+}
+.rightBlok:hover{
+  transition: 1s;
+  background-color: bisque;
+}
+.leftBlok:hover{
+  transition: 1s;
+  background-color: bisque;
+}
+.currentNumberActive{
+  background-color: rgb(169, 204, 122);
+  border-radius: 12px;
+  padding: 3px 10px;
+  cursor: pointer;
+}

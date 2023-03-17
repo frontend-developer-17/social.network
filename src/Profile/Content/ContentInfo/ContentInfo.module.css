@@ -1,0 +1,23 @@
+.flexblock{
+    display: flex;
+}
+.parix{
+    width: 100%;
+    height: 130px;
+}
+.bmw{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+.textBMW{
+   
+    padding: 10px 10px 0 5px;
+}
+
+.postBlock{
+    margin: 10px;
+}
+.image{
+    width: 100px;
+}

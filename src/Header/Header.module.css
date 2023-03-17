@@ -1,0 +1,31 @@
+.hed{
+    background-color: brown;
+    grid-area: h;
+   
+    padding: 10px;
+
+}
+.hed img {
+    width: 60px;
+    border-radius: 80px;
+}
+.headerBlok{
+    display: flex;
+}
+.login{
+    padding: 5px;
+   margin: 25px 0 0 5px;
+   background-color: rgb(130, 148, 108);
+   border-radius: 16px;
+}
+.button{
+    padding: 5px;
+    color: rgb(54, 54, 54);
+    background-color: rgb(96, 126, 139);
+    border-radius: 13px;
+    border: 2px solid rgb(129, 118, 118);
+}
+.button:hover{
+    color: brown;
+    transition: 1,8s;
+}

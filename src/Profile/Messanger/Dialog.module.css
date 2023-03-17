@@ -1,0 +1,56 @@
+.messages{
+    background-color: rgb(180, 168, 190);
+    padding: 10px;
+    
+   
+   
+}
+.NameMessageEl{
+    display: flex;
+    padding-top: 10px;
+    
+}
+.nameEl{
+    padding-right: 20px;
+}
+.textarea{
+    margin: 10px;
+}
+.active{
+    color: gold;
+}
+.imageBlok{
+    width: 150px;
+    height: 100px;
+    border: 2px solid red;
+    border-radius: 20px;
+}
+.messageBlok{
+    border: 1px solid red;
+    width: 300px;
+}
+.fileInput{
+    opacity: 0;
+    position: absolute;
+
+
+}
+
+.imageFile{
+    width: 30px;
+    background-color: rgb(155, 140, 140);
+    padding: 5px;
+    border-radius: 20px;
+    margin: 10px -8px 0 0 ;
+    transition: 1s;
+}
+.imageFile:hover{
+    background-color: rgb(86, 175, 68);
+    transition: 1s;
+}
+.fileName{
+    margin-top: -15px;
+}
+.messageBlokPost{
+    padding-left: 15px;
+}

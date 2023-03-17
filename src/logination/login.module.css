@@ -1,0 +1,27 @@
+.password{
+    border: 1px solid red;
+   
+}
+.formik{
+  width: 300px;
+    background-color:bisque;
+    margin: 0px 0 0 10px;
+}
+.blokEmail{
+margin: -10px 0 0 0;
+}
+.email{
+    border: 1px solid red;  
+}
+.formButton{
+    margin: 10px;
+}
+.blok{
+   margin: 3px 0 0 10px;
+}
+.regision{
+    padding: 3px 0 0 10px;
+}
+.passwordBlok{
+    margin: -10px 0 0 0;
+}
