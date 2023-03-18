@@ -4,6 +4,7 @@ const addPost = "addPost"
 const updateNewPostText = "updateNewPostText"
 const user ="user"
 const getStatus ="getStatus"
+const setPhotos ="setPhotos"
 let initialState = {
   postInfo: [
     { id: "1", message: "Hey, why nobody love me?", likesCount: "5" },
@@ -12,8 +13,9 @@ let initialState = {
     { id: "4", message: "Hi", likesCount: "46" },
   ],
   newPost: "it-kamasutra",
-  userProfile:[],
-  profileStatus:[]
+  userProfile:null,
+  profileStatus:"",
+
 }
 const ProfileReduser = (state = initialState , action) =>{
 
@@ -50,7 +52,10 @@ const ProfileReduser = (state = initialState , action) =>{
             profileStatus:action.status 
       }   
           
-          
+        case setPhotos:
+         
+          return{ ...state, userProfile:{...state.userProfile, photos:action.photos}  
+}  
         
     default:
         return state
@@ -75,7 +80,9 @@ export const setProfileUser = (profileUser) =>({
 export const getProfileStatus = (status) =>({
     type:getStatus,status
 })
-
+export const savePhotosAC = (photos) =>({
+  type:setPhotos,photos
+})
 
 export const profileUserThunk =(profileId) =>
     
@@ -106,6 +113,14 @@ export const updateStatus = (status)=>
         
     
 }
+
+export const savePhotos =(file)=>async(dispatch)=>{
+ 
+  let response = await userApi.SavePhotos(file)
+  debugger
+ dispatch(savePhotosAC(response.data.data.photos))
+}
+
 
 export default ProfileReduser
 

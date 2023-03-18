@@ -9,7 +9,7 @@ const Profile = (props) => {
 
     return (
         <div className={s.content}>
-           <ContentInfo {...props}userProfile={props.userProfile}   />
+           <ContentInfo {...props}userProfile={props.userProfile} isOwner={props.isOwner}   />
            
          <PostContainer   />
         </div>

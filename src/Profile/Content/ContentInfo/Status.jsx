@@ -4,10 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 
 function ProfileStatus (props)  {
-    /*state = {
-        editMode: false,
-        status:"Heloo my Frend"
-     }*/
+  
 
     const [currentStateStatus,setCurrentStateStatus]= useState(false)
     const [stateStatus,setStateStatus]= useState({state:props.profileStatus})
@@ -17,9 +14,7 @@ useEffect(()=>{
 
     const currentStatus=(e)=>{
         const valueIn = e.target.value
-      //  this.setState({
-       //     status:valueIn
-      //  })
+     
      
      
       setStateStatus({...stateStatus,state:valueIn})
@@ -42,7 +37,7 @@ useEffect(()=>{
             <>
                 {!currentStateStatus &&
                     <div className="">
-                        <span onClick={activateEditMode}>{props.profileStatus}</span>
+                        <span onClick={activateEditMode}>{props.profileStatus?props.profileStatus:"Отсутствует"}</span>
                     </div>
                 }
                 {currentStateStatus &&
