@@ -33,9 +33,7 @@
     display: none;
     transition: 1s;
 }
-.portfolio{
-    width: 155px;
-}
+
 
 .portfolio:hover .fileInput{
     display: block;
@@ -53,4 +51,8 @@
 }
 .status{
     margin-left: 5px;
+}
+.nameBlok{
+    display: flex;
+    margin-left: 10px;
 }

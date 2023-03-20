@@ -3,7 +3,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Profile from './Profile';
-import { setProfileUser, profileUserThunk, profileStatusThunk, updateStatus, savePhotos } from './../../Redux/ProfileReduser';
+import { setProfileUser, profileUserThunk, profileStatusThunk, updateStatus, savePhotos, saveProfileThunk } from './../../Redux/ProfileReduser';
 import {  useParams } from 'react-router-dom';
 
 import { RedirectLogin } from '../../hoc/redirect';
@@ -32,7 +32,7 @@ function ComponentWitchRouterProp(props) {
     return <Profile {...props} isOwner={!params.profileId} />
 }
 const UserProfile = compose(
-  connect(mapStateToProps, { setProfileUser, profileUserThunk, profileStatusThunk, updateStatus, savePhotos }),
+  connect(mapStateToProps, { setProfileUser, profileUserThunk, profileStatusThunk, updateStatus, savePhotos, saveProfileThunk }),
     RedirectLogin,
     
 )(ComponentWitchRouterProp)

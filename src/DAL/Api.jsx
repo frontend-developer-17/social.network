@@ -61,6 +61,10 @@ SavePhotos(file){
       'Content-Type':'multipart/form-data'
     }
   })
+},
+SaveProfile(profile){
+  debugger
+  return instanse.put(`/profile`,profile)
 }
  
 }

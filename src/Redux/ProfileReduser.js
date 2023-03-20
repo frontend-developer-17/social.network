@@ -113,11 +113,26 @@ export const updateStatus = (status)=>
         
     
 }
+export const saveProfileThunk = (profile,setError)=>
+    async (dispatch,getState)=>{
+      debugger
+     const userId= getState().AuthLoginReduser.id
 
+        
+        let response = await userApi.SaveProfile(profile)
+        debugger
+            if (response.data.resultCode===0) {
+              dispatch(profileUserThunk(userId))
+            } else{setError('server',{message:response.data.messages})
+
+          }
+           
+        
+    
+}
 export const savePhotos =(file)=>async(dispatch)=>{
  
   let response = await userApi.SavePhotos(file)
-  debugger
  dispatch(savePhotosAC(response.data.data.photos))
 }
 
