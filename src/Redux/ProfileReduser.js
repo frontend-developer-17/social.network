@@ -87,9 +87,14 @@ export const savePhotosAC = (photos) =>({
 export const profileUserThunk =(profileId) =>
     
    async (dispatch) =>{
+    try {
       let response = await  userApi.ProfileUser(profileId)
-       dispatch(setProfileUser(response.data))
-          
+      dispatch(setProfileUser(response.data))
+         
+    } catch (error) {
+      alert(error)
+    }
+     
        
     }
 

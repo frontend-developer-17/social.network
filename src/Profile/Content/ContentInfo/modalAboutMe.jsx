@@ -6,7 +6,7 @@ const ModalAboutMe = ({ active, setActive, savePhotos, saveProfileThunk }) => {
         console.log(data);
 
         saveProfileThunk(data, setError)
-        reset()
+       
     }
 
     const postPhoto = (e) => {
@@ -27,12 +27,12 @@ const ModalAboutMe = ({ active, setActive, savePhotos, saveProfileThunk }) => {
                     
                 <div className="socialNetwork" >
                         <h5>Имя пользователя:</h5>
-                        <input className="currentEL"   {...register("FullName")} type="text" placeholder='Введите имя пользователя' />
+                        <input onClick={() => clearErrors()} className="currentEL"   {...register("FullName")} type="text" placeholder='Введите имя пользователя' />
                     </div>
                  
                     <div className="socialNetwork" >
                         <h5>Мои навыки:</h5>
-                        <input onFocus={() => clearErrors()} className="currentEL"  {...register("LookingForAJobDescription")} type="text" placeholder='Введите свои навыки' />
+                        <input   className="currentEL"  {...register("LookingForAJobDescription")} type="text" placeholder='Введите свои навыки' />
                     </div>
                   
                   

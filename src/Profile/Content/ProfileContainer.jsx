@@ -9,7 +9,6 @@ import {  useParams } from 'react-router-dom';
 import { RedirectLogin } from '../../hoc/redirect';
 import { compose } from 'redux';
 import { useEffect } from 'react';
-import Preloader from '../../image/preloader';
 
 const mapStateToProps = (state) => ({
     userProfile: state.profilePage.userProfile,

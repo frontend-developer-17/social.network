@@ -47,10 +47,7 @@ const User = (props) => {
                             <div className={s.name}>{u.name}</div>
                             <div className="">{u.status}</div>
                         </div>
-                        <div className={s.city}>
-                            <div className="">{"u.location.city"}</div>
-                            <div className="">{"u.location.country"}</div>
-                        </div>
+                      
 
                     </div>
                 </div>

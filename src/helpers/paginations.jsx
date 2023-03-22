@@ -1,7 +1,7 @@
 import s from "./paginators.module.css"
 import { useState } from 'react';
 import icon from ".//../image/IconPeremot.png"
-
+import classNames from 'classnames/bind';
 export const UserPagination = ({ totalPage, pageSize, currentNumber, currentPage, paginationsPortion = 10 }) => {
 
     let pageNumber = Math.ceil(totalPage / pageSize)
@@ -28,11 +28,11 @@ export const UserPagination = ({ totalPage, pageSize, currentNumber, currentPage
                 {pages.filter(p => p >= leftButton && p <= rightButton)
                     .map(p => {
                         return <span  onClick={() => 
-                        { currentNumber(p) }} className={currentPage === p ? s.currentNumberActive : s.activeNumber }>
+                        { currentNumber(p) }} className= {classNames({ [s.currentNumberActive]:currentPage === p}, s.activeNumber)}>
                             {p}</span>
                     })}
                 
-            
+           
 
                 {portionCount > currentPortion && 
                

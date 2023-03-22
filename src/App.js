@@ -33,7 +33,7 @@ if (!props.initial) {
         <Navbar/>
         <div className={s.content}>
           <Routes>
-          <Route exact path='/' element={<UserProfile/>} />
+          <Route exact path='/social.network/' element={<UserProfile/>} />
 
           <Route exact path='/profile/:profileId?' element={<UserProfile/>} />
 

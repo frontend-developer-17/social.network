@@ -1,0 +1,44 @@
+.aboutmodal{
+   
+    width : 100vw;
+     height: 100vh;
+      background-color: rgba(73, 72, 72, 0.5);
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   opacity: 0;
+      transition: 0.5s;
+     
+      pointer-events:none
+  }
+  .aboutmodal.active{
+    width : 100vw;
+    height: 100vh;
+     background-color: rgba(73, 72, 72, 0.5);
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  opacity: 1;
+     transition: 0.5s;
+    
+    
+  
+  }
+  .modal__content{
+      padding: 20px;
+  
+      border-radius: 12px;
+      background-color: white;
+      transform: scale(0.5);
+      transition: 0.4s all;
+     
+  }
+  .modal__content.active{
+      transform: scale(1);
+  }
